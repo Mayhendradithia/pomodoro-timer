@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>pomodoro-timer</title>
+</head>
+
+<body class="min-h-screen bg-white text-neutral-900 antialiased flex items-center justify-center p-4"
+    style="font-family: Arial, Helvetica, sans-serif;">
+    <main class="w-full max-w-md">
+        <h1 class="sr-only">Pomodoro Timer</h1>
+
+
+        <div class="macos rounded-xl border border-neutral-200 bg-white shadow-2xl ring-1 ring-black/5 overflow-hidden"
+            role="region" aria-label="Pomodoro window">
+            <header class="flex items-center gap-2 px-4 py-3 border-b border-neutral-200" aria-label="Window title bar">
+                <div class="flex items-center gap-2">
+                    <span class="h-3 w-3 rounded-full bg-red-500" aria-hidden="true"></span>
+                    <span class="h-3 w-3 rounded-full bg-amber-400" aria-hidden="true"></span>
+                    <span class="h-3 w-3 rounded-full bg-emerald-500" aria-hidden="true"></span>
+                </div>
+                <div class="ml-24 text-sm font-medium text-neutral-600">
+                    Pomodoro Timer
+                </div>
+                <div class="ml-24 text-sm font-medium text-neutral-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                    </svg>
+
+                </div>
+
+                <div class="w-6" aria-hidden="true"></div>
+            </header>
+
+
+            <section class="px-6 py-8">
+                <p class="text-center text-sm text-neutral-500">Focus session</p>
+                <div class="mt-2 text-center">
+                    <div class="text-5xl md:text-6xl font-semibold tracking-tight tabular-nums">
+                        25:00
+                    </div>
+                    <p class="mt-2 text-xs text-neutral-500">Default Pomodoro length</p>
+                </div>
+
+                <div class="mt-8 flex items-center justify-center gap-3">
+                    <button type="button"
+                        class="inline-flex items-center justify-center rounded-md bg-emerald-600 px-4 py-2 text-white text-sm font-medium hover:bg-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
+                        aria-label="Start timer">
+                        Start
+                    </button>
+                    <button type="button"
+                        class="inline-flex items-center justify-center rounded-md bg-rose-600 px-4 py-2 text-white text-sm font-medium hover:bg-rose-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-600"
+                        aria-label="Stop timer">
+                        Stop
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
